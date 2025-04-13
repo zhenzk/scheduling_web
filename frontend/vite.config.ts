@@ -20,13 +20,11 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
-    // 添加historyApiFallback配置，确保所有路由都返回index.html
-    historyApiFallback: true
   },
   build: {
     outDir: 'dist',
     sourcemap: true,
   },
-  // 添加base配置，确保资源路径正确
+  // 确保资源路径正确
   base: './'
 })
